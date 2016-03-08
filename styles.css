@@ -178,20 +178,22 @@ site-specific styles here.
 ===================================== */
 
 body {
-	background: #ddd;
+	background: #fff
 }
 
 header {
   text-align: center;
-  margin-top: 4em;
+  margin-top: 5em;
+  margin-bottom: 3.125em;
 }
 
 header .tagline {
   font-size: 0.75em;
   font-weight: normal;
-  line-height: 1em;
   text-transform: uppercase;
 }
+
+
 
 /* SITE-SPECIFIC TYPOGRAPHY
 Description: Adjust the base typography settings above
@@ -202,7 +204,7 @@ with site-specific styles here.
 h1 {
 	font-size: 3.125em; /* 48px / 16px = 3em */
   font-weight: bold;
-	line-height: 1em;
+	line-height: .3em;
 }
 
 /* LAYOUT/GRID
@@ -211,9 +213,10 @@ Description: Place grid and visual layout styling here.
 ===================================== */
 .container {
 	/* Fixed width: 960px */
-    width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin: 2em auto;
-	padding: 5em;
+  width: 58.75em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
+	margin-left: 17.5em;
+  margin-right: 17.5em;
+	padding: 0;
 	background: #fff;
 }
 
@@ -223,6 +226,93 @@ Description: Style major site sections here.
 asides, sidebars, footer, sub page-specific styling, etc.)
 ===================================== */
 
+.mainnav {
+  border-top: 3px solid #d5d5d5;
+  border-bottom: 3px solid #d5d5d5;
+  padding-top: .75em;
+  text-align: center;
+
+}
+
+.mainnav li {
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  list-style-type: none;
+  line-height: 1em;
+}
+
+.mainnav li:active {
+  background: #ececec;
+}
+
+.mainnav span{
+  font-size: .625em;
+  font-style: bold;
+  color: #999;
+}
+
+.hero {
+  margin-top: 1.875em;
+  padding-top: 5.1875em;
+  padding-bottom: 6em;
+  padding-left: 6.875em;
+  padding-right: 6.875em;
+  border-radius: 2em;
+  background: #ececec;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 5.95em;
+  font-weight: bold;
+}
+
+.row {
+  text-align: center;
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.col-4 {
+  float: left;
+  width: 18.75em;
+  text-align: left;
+  font-size: 1em;
+  margin-right: 1.25em;
+  padding-right: 0;
+}
+
+/*width should be 18.75 em..why won't it fit within the row?*/
+
+.col-4:last-of-type {
+  margin-right: 0;
+}
+
+
+.col-4 h3 {
+  font-size: 2.25em;
+  font-weight: bold;
+  line-height: .3125em;
+}
+
+.byline {
+  font-size: .625em;
+  font-weight: bold;
+  text-align: left;
+  color: #666;
+  margin-bottom: 1em;
+}
+
+.col-4 img {
+  margin-bottom: .5em;
+}
+
+.col-4 span {
+  color: #3399cc;
+}
 
 /* MEDIA QUERIES
 Description: Define screen-size breakpoints here.
