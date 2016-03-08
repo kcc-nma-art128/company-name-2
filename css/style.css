@@ -48,51 +48,61 @@ header, section, footer, aside, nav, article, figure {
 ================================================== */
 
 /* #BODY */
-body {
+
+body{
+  margin:0 1.5%;
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 100%; /* 1em = 16px */
 	line-height: 1.5em; /* 16px x 1.5em = 24px */
 	color: #333;
 }
+section{
+  display: inline-block;
+  width: 96%;
+  height: 200px;
+  text-align: center;
+  margin: 1.5% ;
+}
+
+.section1 {
+	background: #ddd;
+}
+
+
+.footer{
+  clear: both;
+}
+
+.col-4{
+  float: left;
+  width: 30%;
+
+}
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  clear: both;
+  *zoom: 1;
+}
+ul{
+  list-style: none;
+  margin-bottom: 500px;
+}
+
 
 /* #HEADINGS
 Based on a Traditional Typographic Scale:
 48, 36, 24, 21, 18, 16
 ================================================== */
 
-h1, h2, h3, h4, h5, h6 {
-	margin-bottom: .5em;
-}
 
-h1 {
-	font-size: 3em; /* 48px / 16px = 3em */
-	line-height: 1em;
-}
-
-h2 {
-	font-size: 2.25em; /* 36px / 16px = 2.25em */
-	line-height: 1.1em;
-}
-
-h3 {
-	font-size: 1.5em; /* 24px / 16px = 1.5em */
-	line-height: 1.2em;
-}
-
-h4 {
-	font-size: 1.3125em; /* 21px / 16px = 1.3125em */
-	line-height: 1.3em;
-}
-
-h5 {
-	font-size: 1.125em; /* 18px / 16px = 1.125em */
-	line-height: 1.4em;
-}
-
-h6 {
-	font-size: 1em; /* 16px / 16px = 1em */
-	line-height: 1.5em;
-}
 
 /* #Paragraphs
 ================================================== */
@@ -176,7 +186,20 @@ site-specific styles here.
 ===================================== */
 
 body {
-	background: #ddd;
+	background: #fff;
+}
+
+header {
+	text-align: center;
+}
+
+
+nav {
+	text-align: center;
+}
+nav ul li{
+	display: inline-block
+
 }
 
 /* SITE-SPECIFIC TYPOGRAPHY
