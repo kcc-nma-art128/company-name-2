@@ -1,3 +1,46 @@
-*{
-  
+/* CSS TABLE OF CONTENTS
+=====================================
+    #BASE CSS
+    #SITE-SPECIFIC CSS
+===================================== */
+
+/* BASE (Initital Setup)
+=====================================
+    #RESET
+    #HTML5
+    #BASE TYPOGRAPHY
+        #BODY
+        #HEADINGS
+        #PARAGRAPHS
+        #LINKS
+        #LISTS
+    #IMAGES
+    #CLEARFIX
+===================================== */
+
+/* SITE SPECIFIC (Custom CSS for The Client Site)
+=====================================
+    #SITE-SPECIFIC GENERAL STYLING
+    #SITE-SPECIFIC TYPOGRAPHY
+    #LAYOUT/GRID
+    #SECTIONS
+    #MEDIA QUERIES
+    #@FONT-FACE
+===================================== */
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 */
+header, section, footer, aside, article, nav, figure {
+  display: block;
+}
+
+/* BASE TYPOGRAPHY */
+
+/* BODY */*{
+
 }
