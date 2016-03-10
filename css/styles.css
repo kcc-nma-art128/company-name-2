@@ -1,0 +1,328 @@
+/* CSS TABLE OF CONTENTS
+=====================================
+    #BASE CSS
+    #SITE-SPECIFIC CSS
+===================================== */
+
+/* BASE (Initital Setup)
+=====================================
+    #RESET
+    #HTML5
+    #BASE TYPOGRAPHY
+        #BODY
+        #HEADINGS
+        #PARAGRAPHS
+        #LINKS
+        #LISTS
+    #IMAGES
+    #CLEARFIX
+===================================== */
+
+/* SITE SPECIFIC (Custom CSS for The Client Site)
+=====================================
+    #SITE-SPECIFIC GENERAL STYLING
+    #SITE-SPECIFIC TYPOGRAPHY
+    #LAYOUT/GRID
+    #SECTIONS
+    #MEDIA QUERIES
+    #@FONT-FACE
+===================================== */
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* HTML5 */
+header, section, footer, aside, article, nav, figure {
+  display: block;
+}
+
+/* BASE TYPOGRAPHY */
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%; /* 1em = 16px*/
+  line-height: 1.5em;
+  color: #333;
+}
+
+/* HEADINGS 48, 36, 24, 21, 18, 16 */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 2.25em; /* 36px / 16px = 2.25em */
+  line-height: 1.1em;
+}
+
+h3 {
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  line-height: 1.2em;
+}
+
+h4 {
+  font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.4em;
+}
+
+h6 {
+  font-size: 1em; /* 16px / 16px = 1em */
+  line-height: 1.5em;
+}
+
+
+/* PARAGPRAHS */
+p {
+  margin-bottom: 2em;
+}
+
+/* LINKS */
+a {
+  color: #0fa4e2;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:visited {
+  color: #0fa4e2;
+  text-decoration:underline;
+
+}
+
+
+/* LISTS */
+ul, ol {
+  margin-bottom: .5em;
+}
+
+ul li ul, ul li ol, ol li ol, ol li ul {
+  margin-bottom: 0;
+}
+
+li {
+  margin-left: 1.875em;
+}
+
+/* IMAGES */
+.scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* CLEARFIX */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  clear: both;
+  *zoom: 1;
+}
+
+/* SITE SPECIFIC CSS */
+body {
+  background: #fff;
+}
+
+.container {
+  position: relative;
+  width:58.75em; /* 960px / 16px = 60em / 1.25em = 58.75em */
+  padding: 0 .625em;
+  margin: 0 auto;
+}
+
+h1 {
+  /* 42px/50px */
+  font-family:"Arial Black",
+  Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 2.625em;
+  line-height: 1.19em;
+}
+
+h2 {
+  /*24px/50px */
+  font-weight: normal;
+  font-size: 1.5em;
+  line-height: 1.25em;
+  letter-spacing:-.025em;
+}
+
+h3 {
+  /*21px/50px */
+  font-size: 1.3125em;
+  line-height: 1.143em;
+  letter-spacing: -.04em;
+}
+
+h4 {
+  /* 11px/50px*/
+  font-weight: normal;
+  font-size: .6875em;
+  line-height: 1.27em;
+  color: #615c5c;
+}
+
+/* LAYOUT/GRID */
+.section02 .col-1 {
+  width: ;
+  float: left;
+}
+
+/* HEADER */
+.header {
+  height: 155px;
+}
+
+.header h1{
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.tagline {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* MAIN NAV */
+.mainnav {
+  background: #fff;
+  text-align: center;
+}
+
+
+.mainnav ul {
+  margin: 0;
+  list-style: none;
+}
+
+.mainnav li {
+  margin: 0;
+  display: inline-block;
+}
+
+.mainnav a {
+  display: block;
+  font-family: "Arial Black", "Arial Bold", Helvetica, Gadget, sans-serif;
+  font-size: 1em;
+  line-height: 1em;
+  padding: .75em;
+  color: #000;
+}
+
+.mainnav a:hover {
+  background: #ececec;
+  color: #000;
+}
+
+.mainnav a.active {
+  color: #000;
+  background: transparent;
+}
+
+a.nav-toggle {
+display: none;
+box-sizing: border-box;
+width: 12px;
+height: 16px;
+margin:  16px auto;
+position: relative;
+}
+a.nav-toggle:hover {
+  background: #ececec;
+}
+
+.nav-toggle:before, .nav-toggle:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all .5s;
+}
+
+.nav-toggle:before {
+  border-top:  4px solid #fff;
+  border-bottom:  4px solid #fff;
+}
+
+.nav-toggle:after {
+  top: 12px;
+  height: 4px;
+  background: #fff;
+}
+
+.nav-toggle.active:before {
+  border: 0;
+  top: 12px;
+  height: 4px;
+  background: #fff;
+  transform: rotate(45deg);
+}
+
+.nav-toggle.active:after {
+  transform: rotate(-45deg);
+}
+
+/* SECTION 01 */
+.section01 {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background: #ececec;
+  text-align: center;
+}
+
+.section01 h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 5.93em; /* 95 px / 16px = 5.93em */
+  font-weight: 600;
+}
+
+/* SECTION 02 */
+.section02 {
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 15em;
+  text-align: left;
+  display: inline-block;
+}
+
+.section02 h3 {
+  font-family: Helvetica, sans-serif;
+  font-size: 2.25em; /* 36 px / 16px = 2.25em */
+  margin: 0;
+  padding: 0;
+}
+
+.section02 h4 {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.625em; /* 10 px / 16px = 0.625em */
+  margin: 0;
+  padding: 0;
+}
+
+
+/* SECTION 03 */
+.section03 {
+
+}
