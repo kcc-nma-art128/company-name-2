@@ -326,3 +326,28 @@ a.nav-toggle:hover {
 .section03 {
 
 }
+
+/* FOOTER */
+.footer {
+  width: 1500px;
+  height: 390px;
+  background: #ececec;
+  display: inline-block;
+}
+
+.logo h1 {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.96em; /* 19.15 px / 16px = 1.96em */
+  font-weight: 600;
+  margin: 0;
+  padding-top: 1em;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.footer .col {
+  float: right;
+}
