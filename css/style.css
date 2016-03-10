@@ -159,45 +159,42 @@ body{
 
 h1 {
   font-size: 3.125em; /* 50px */
-  line-height: 2.5em; /* 40px */
   font-weight: bold;
-  letter-spacing: -.05em;
+  letter-spacing: -.03em;
+  margin:0;
 }
 /*Ask the kerning-50=?em*/
 
 h2 {
   font-size: 5.950em; /* 95.21px */
-  line-height:5.95em; /* 95.21px */
+  /*line-height:5.95em; /* 95.21px */*/
   font-weight: bold;
 }
 
 h3 {
   font-size: 2.25em; /* 36px */
-  line-height: 4.894em; /* 78.31px */
+  /*line-height: 4.894em; /* 78.31px */*/
   font-weight: bold;
 }
 
 h4 {
   font-size: .625em; /* 10px */
-  line-height: 0.97875em; /* 15.66px */
+  /*line-height: 0.97875em; /* 15.66px */*/
   font-weight: bold;
   color: #666666;
 
 }
-/*HEADER=====================================*/
+/*HEADER==========================s===========*/
 header {
 	text-align: center;
 	padding: 4.5em 0 0 0;
+  color: #000;
 }
-h1{
-	margin-bottom: 0;
-  height: 90px;
-  color:#000;
-}
+
 .tagline {
 	font-size: .75em;
 	text-transform: uppercase;
-	color: #000;
+  margin-bottom: 50px;
 }
 
 
@@ -233,6 +230,7 @@ h1{
 	line-height: .625em;
 	color: #999;
 	font-weight: normal;
+  padding-left: 3.375em;
 
 }
 
