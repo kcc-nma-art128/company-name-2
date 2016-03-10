@@ -143,7 +143,10 @@ img .scale-with-grid {
 /* SITE SPECIFIC CSS
 ===================================== */
 /*#SITE-SPECIFIC GENERAL STYLING*/
-/*BODY*/
+
+
+
+/*BODY===================================== */
 body{
   background: #fff;
 }
@@ -181,5 +184,63 @@ h4 {
   color: #666666;
 
 }
+/*HEADER=====================================*/
+header {
+	text-align: center;
+	padding: 4.5em 0 0 0;
+}
+h1{
+	margin-bottom: 0;
+  height: 90px;
+  color:#000;
+}
+.tagline {
+	font-size: .75em;
+	text-transform: uppercase;
+	color: #000;
+}
+
+
+
+/*MAIN NAV=====================================*/
+
+.mainnav {
+  margin: 2em 0;
+  padding: 2px 0;
+  border-top: 2px solid #d5d5d5;
+	border-bottom: 2px solid #d5d5d5;
+  margin: 0 10px 0 10px;
+  text-align: center;
+  height: 50px;
+}
+
+.mainnav ul li {
+    display: inline-block;
+
+}
+
+.mainnav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 0.01px;
+    padding: 0.5em 1.25em;
+}
+.mainnav small {
+  display: block;
+	font-size: .625em;
+	line-height: .625em;
+	color: #999;
+	font-weight: normal;
+
+}
+
+
+
+
+
+
+
 /* LAYOUT/GRID
 ===================================== */
