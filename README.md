@@ -14,4 +14,3 @@ Midterm Project for Interface Programming 1 at KCC NMA.
   + PC: Firefox, IE9+, Opera, Chrome
   + MAC: Safari, Firefox, Opera, Chrome
 - Turn in your final assignment by creating a pull request.
-
