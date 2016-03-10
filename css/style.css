@@ -269,11 +269,20 @@ header {
 }
 /*Section2===================*/
 
-.section2{
-  padding-bottom: 4.25em;
-
-
+.section02{
+  background: #fff;
+  padding-top: 1em;
+  padding-bottom: 4.5em;
 }
+
+ h3,.byline{
+  margin-bottom: 0;
+}
+h3 .byline, a img{
+  margin: .75em 0;
+}
+
+
 
 
 
@@ -283,3 +292,8 @@ header {
 
 /* LAYOUT/GRID
 ===================================== */
+.section02 .col2{
+  width:300px;
+  float: left;
+  margin-right: 4em;
+}
