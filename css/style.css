@@ -167,6 +167,7 @@ h1 {
 
 h2 {
   font-size: 5.950em; /* 95.21px */
+  line-height: 1em;
   /*line-height:5.95em; /* 95.21px */*/
   font-weight: bold;
 }
@@ -187,14 +188,14 @@ h4 {
 /*HEADER==========================s===========*/
 header {
 	text-align: center;
-	padding: 4.5em 0 0 0;
+	padding: 5em 0 0 0;
   color: #000;
 }
 
 .tagline {
 	font-size: .75em;
 	text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 3.125em;
 }
 
 
@@ -202,17 +203,28 @@ header {
 /*MAIN NAV=====================================*/
 
 .mainnav {
-  margin: 2em 0;
+  /*margin: 2em 0;*/
   padding: 2px 0;
   border-top: 2px solid #d5d5d5;
 	border-bottom: 2px solid #d5d5d5;
-  margin: 0 10px 0 10px;
+  /*margin: 0 10px 0 10px;*/
   text-align: center;
-  height: 50px;
-}
 
+}
+.mainnav ul{
+  margin:0;
+}
 .mainnav ul li {
     display: inline-block;
+    margin: 0;
+    padding: 0.5em 1.25em;
+
+}
+.mainnav li:hover{
+  background: #ececec;
+}
+.mainnav .active{
+  background: #ececec;
 
 }
 
@@ -222,15 +234,44 @@ header {
     font-weight: bold;
     font-size: 1em;
     line-height: 0.01px;
-    padding: 0.5em 1.25em;
+    /*padding: 0.5em 1.25em;*/
 }
 .mainnav small {
   display: block;
 	font-size: .625em;
-	line-height: .625em;
+	line-height: 0.9em;
 	color: #999;
 	font-weight: normal;
-  padding-left: 3.375em;
+}
+
+
+
+
+/*CONTENT=====================================*/
+/*Section1===================*/
+.section01{
+  background: #ececec;
+  padding: 4em 0;
+  margin: 1.875em 0;
+  text-align: center;
+  border-radius: 20px;
+/*ask the round border*/
+}
+.section01 h2{
+  margin: 0 0 .25em 0;
+  padding: 0 5%;
+}
+.section01 p{
+  font-size: 1.3125em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 0 15%;
+}
+/*Section2===================*/
+
+.section2{
+  padding-bottom: 4.25em;
+
 
 }
 
