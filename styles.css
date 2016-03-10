@@ -216,8 +216,8 @@ Description: Place grid and visual layout styling here.
 .container {
 	/* Fixed width: 960px */
   width: 58.75em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin-left: 17.5em;
-  margin-right: 17.5em;
+	margin-left: auto;
+  margin-right: auto;
 	padding: 0;
 	background: #fff;
 }
@@ -323,6 +323,7 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 .section3 {
 	text-align: center;;
 }
+
 .section3 h2 {
 	font-size: 1.5em;
 	font-weight: bold;
@@ -333,7 +334,6 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 	padding-top: 1.25em;
 	padding-bottom: 1em;
 	line-height: 0;
-
 }
 
 .section3 p {
@@ -342,6 +342,45 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 	border-bottom: 1px solid #ddd;
 	padding-top: 2.625em;
 	padding-bottom: 2.6875em;
+}
+
+
+.col-6 {
+	float: left;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4.375em;
+	margin-bottom: 4.375em;
+}
+
+.col-6 ul li {
+	list-style: none;
+	margin: 1em;
+}
+
+.col-6 i {
+	float: left;
+}
+
+.col-6 h6 {
+	font-size: 1.125em;
+	text-align: left;
+	text-transform: capitalize;
+	margin-left: 4em;
+}
+
+.col-6 p {
+	text-align: left;
+	margin-left: 4.5em;
+	width: 15.0625em;
+}
+
+
+
+.footer {
+	background: #ddd;
+	height: 15em;
 }
 
 /* MEDIA QUERIES
