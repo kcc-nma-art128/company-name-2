@@ -207,6 +207,8 @@ h1 {
 	line-height: .3em;
 }
 
+
+
 /* LAYOUT/GRID
 Description: Place grid and visual layout styling here.
 (e.g. containers, rows, columns)
@@ -229,7 +231,6 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 .mainnav {
   border-top: 3px solid #d5d5d5;
   border-bottom: 3px solid #d5d5d5;
-  padding-top: .75em;
   text-align: center;
 
 }
@@ -241,7 +242,12 @@ asides, sidebars, footer, sub page-specific styling, etc.)
   text-align: center;
   text-transform: capitalize;
   list-style-type: none;
-  line-height: 1em;
+	line-height: 1em;
+	width: 7.625em;
+	height: 2.75em;
+	padding: 0.625em;
+	padding-bottom: 0;
+	margin: 0.125em;
 }
 
 .mainnav li:active {
@@ -312,6 +318,30 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 
 .col-4 span {
   color: #3399cc;
+}
+
+.section3 {
+	text-align: center;;
+}
+.section3 h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-top: 4.75em;
+	padding-top: 1.25em;
+	padding-bottom: 1em;
+	line-height: 0;
+
+}
+
+.section3 p {
+	font-size: 1.3125em;
+	line-height: 1.5em;
+	border-bottom: 1px solid #ddd;
+	padding-top: 2.625em;
+	padding-bottom: 2.6875em;
 }
 
 /* MEDIA QUERIES
