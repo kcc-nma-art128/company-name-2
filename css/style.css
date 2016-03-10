@@ -39,8 +39,147 @@ header, section, footer, aside, article, nav, figure {
   display: block;
 }
 
+/* CLEARFIX */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row {
+  clear: both;
+  *zoom: 1;
+}
 /* BASE TYPOGRAPHY */
 
-/* BODY */*{
+/* BODY */
+body {
+  font-family: Helvetica,Arial, sans-serif;
+  font-size: 100%; /* 1em = 16px */
+  line-height: 1.5em;
+  color: #090708;
+}
+
+/* HEADINGS
+  48, 36, 24, 21, 18, 16
+*/
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5em;
+}
+
+h1 {
+  font-size: 3em; /* 48px / 16px = 3em */
+  line-height: 1.15em;
+}
+
+h2 {
+  font-size: 2.25em; /* 36px / 16px = 2.25em */
+  line-height: 1.2em;
+}
+
+h3 {
+  font-size: 1.5em; /* 24px / 16px = 1.5em */
+  line-height: 1.25em;
+}
+
+h4 {
+  font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.125em; /* 18px / 16px = 1.125em */
+  line-height: 1.35em;
+}
+
+h6 {
+  font-size: 1em; /* 16px / 16px = 1em */
+  line-height: 1.4em;
+}
+
+
+/* PARAGPRAHS */
+p {
+  margin-bottom: 1.25em;
+}
+
+/* LINKS */
+a {
+  color: #000;
+  text-decoration: none;
 
 }
+
+a:hover, a:active, a:visited {
+  color: #000;
+}
+
+/* LISTS */
+ul, ol {
+  margin: 0 0 1.25em 0;
+  clear:both;
+}
+
+ul li ul, ul li ol, ol li ol, ol li ul {
+  margin: 0;
+}
+
+li {
+  clear:both;
+  margin-left: 1.875em;
+}
+
+/* IMAGES */
+img .scale-with-grid {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/* SITE SPECIFIC CSS
+===================================== */
+/*#SITE-SPECIFIC GENERAL STYLING*/
+/*BODY*/
+body{
+  background: #fff;
+}
+
+.container {
+  position: relative;
+  width: 58.75em; /* 940px / 16px = 58.75em */
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 3.125em; /* 50px */
+  line-height: 2.5em; /* 40px */
+  font-weight: bold;
+  letter-spacing: -.05em;
+}
+/*Ask the kerning-50=?em*/
+
+h2 {
+  font-size: 5.950em; /* 95.21px */
+  line-height:5.95em; /* 95.21px */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.25em; /* 36px */
+  line-height: 4.894em; /* 78.31px */
+  font-weight: bold;
+}
+
+h4 {
+  font-size: .625em; /* 10px */
+  line-height: 0.97875em; /* 15.66px */
+  font-weight: bold;
+  color: #666666;
+
+}
+/* LAYOUT/GRID
+===================================== */
