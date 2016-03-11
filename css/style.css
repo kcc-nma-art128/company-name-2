@@ -345,9 +345,59 @@ h3 .byline, a img{
   line-height: 1.25em;
   color:#090807;
 }
-/*.section04 ul li h4 {
-	margin: 0 0 .25em 0;
-}*/
+
+/* FOOTER================== */
+.footer{
+  background:#ececec;
+  border-top: 3px solid #cecece;
+  padding: 2.625em 0 5em 0;
+}
+.footer .logo {
+	float: left;
+	margin: 0;
+}
+.footer .logo h1{
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: -.03em;
+}
+.copyright{
+  font-size: 0.625em;
+  line-height: 1em;
+  font-weight: normal;
+  color: #999;
+}
+.logo{
+  margin:0;}
+
+.footer .footernav{
+  text-align: right;
+  float: right;
+}
+.footernav ul {
+  list-style: none;
+  text-align: right;
+  float: right;
+  margin: 0;
+}
+.footernav ul li {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0;
+  padding: 0.5em 1.25em;
+
+}
+.footernav ul li a small {
+	display:  block;
+	font-size: .625em;
+	line-height: .9em;
+	color: #999;
+	font-weight: normal;
+}
+
+
+
+
 
 
 
