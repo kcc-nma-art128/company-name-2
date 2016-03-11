@@ -319,18 +319,41 @@ h3 .byline, a img{
 	list-style: none;
 	margin: 2em 0;
 }
-.section4 ul li {
+.section04 ul li {
 	position: relative;
-	padding: 0 0 1em 4.5em;
+  padding: 0 0 1em 4.5em;
 }
 
+.section04 i {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 3.5em;
+	line-height: 1.25em;
+  color: #333;
+}
+
+.section04 h4{
+  font-size: 1.125em;
+  font-weight: bold;
+  line-height: 2.25em;
+  margin-bottom: 0;
+  color:#090807;
+}
+ .section04 p{
+  font-size: 1em;
+  line-height: 1.25em;
+  color:#090807;
+}
+/*.section04 ul li h4 {
+	margin: 0 0 .25em 0;
+}*/
 
 
 
 
 
-
-/* LAYOUT/GRID*/
+/* LAYOUT/GRID================== */
 
 .col2{
   width:300px;
@@ -342,14 +365,14 @@ h3 .byline, a img{
 }
 
 .col4a{
-  width: 300px;
+  width: 340px;
   float: left;
-  margin: 0 160px 0 80px;
+  margin: 0 40px 0 140px;
 
 }
 .col4b{
-  width: 300px;
-  float: left;
-  margin: 0 100px 0 0;
+  width: 340px;
+ float: left;
+ margin-left : 0;
 
 }
