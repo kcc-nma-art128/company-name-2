@@ -341,7 +341,15 @@ h3 .byline, a img{
   margin-right:0;
 }
 
-.col4{
-  width: 470px;
-  float: right;
+.col4a{
+  width: 300px;
+  float: left;
+  margin: 0 160px 0 80px;
+
+}
+.col4b{
+  width: 300px;
+  float: left;
+  margin: 0 100px 0 0;
+
 }
