@@ -256,7 +256,7 @@ header {
 .section01{
   background: #ececec;
   padding: 4em 0;
-  margin: 1.875em 0;
+  margin: 1.875em 0 3em 0;
   text-align: center;
   border-radius: 20px;
 /*ask the round border*/
@@ -272,9 +272,9 @@ header {
   padding: 0 15%;
 }
 /*Section2===================*/
-.section02{
-  margin: 3.375em 0;
-}
+/*.section02{
+  margin: 3em 0;
+}*/
 .section02 img{
   border-radius: 20px;
   }
@@ -293,7 +293,25 @@ h3 .byline, a img{
 .readmore {
   color: #3399cc;
 }
-
+/*Section3===================*/
+.section03 h3 {
+  font-size: 1.5em;
+  line-height: 1.875em;
+	text-align: center;
+	text-transform: uppercase;
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+	margin: 2em 0 0 0;
+	padding: .5em 0 .25em 0;
+}
+.section03 p {
+	text-align: center;
+	font-size: 1.3125em;
+	line-height: 1.8755em;
+	padding: 2em 10%;
+	border-bottom: 1px solid #d5d5d5;
+	margin: 0 0 1em 0;
+}
 
 
 
