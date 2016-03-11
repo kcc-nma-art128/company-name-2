@@ -107,16 +107,14 @@ p {
 
 /* LINKS */
 a {
-  color: #000;
+  color: #39c;
   text-decoration: none;
-
-}
-
-a:hover, a:active, a:visited {
-  color: #000;
-}
+  outline: 0; }
+a:hover {
+  color: #39c; }
 
 /* LISTS */
+
 ul, ol {
   margin: 0 0 1.25em 0;
   clear:both;
@@ -132,9 +130,12 @@ li {
 }
 
 /* IMAGES */
-img .scale-with-grid {
-  max-width: 100%;
-  height: auto;
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto;
+}
+a img {
+	border: none;
 }
 
 
@@ -185,11 +186,14 @@ h4 {
   color: #666666;
 
 }
+
 /*HEADER==========================s===========*/
+a{
+	color: #000;
+}
 header {
 	text-align: center;
 	padding: 5em 0 0 0;
-  color: #000;
 }
 
 .tagline {
@@ -268,19 +272,27 @@ header {
   padding: 0 15%;
 }
 /*Section2===================*/
-
 .section02{
-  background: #fff;
-  padding-top: 1em;
-  padding-bottom: 4.5em;
+  margin: 3.375em 0;
+}
+.section02 img{
+  border-radius: 20px;
+  }
+.byline{
+  font-size: 0.625em;
+  font-weight: bold;
+  line-height: 0.978em;
 }
 
- h3,.byline{
-  margin-bottom: 0;
+h3,.byline {
+  margin: 0;
 }
 h3 .byline, a img{
   margin: .75em 0;
 }
+.readmore {
+  color: #3399cc;
+}
 
 
 
@@ -290,10 +302,14 @@ h3 .byline, a img{
 
 
 
-/* LAYOUT/GRID
-===================================== */
-.section02 .col2{
+
+/* LAYOUT/GRID*/
+
+.col2{
   width:300px;
   float: left;
-  margin-right: 4em;
+  margin-right: 20px;
+}
+.col2:last-of-type{
+  margin-right:0;
 }
