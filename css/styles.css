@@ -128,9 +128,11 @@ li {
   content: "";
   display: table;
 }
+
 .row:after {
   clear: both;
 }
+
 .row {
   clear: both;
   *zoom: 1;
@@ -181,9 +183,10 @@ h4 {
 }
 
 /* LAYOUT/GRID */
-.section02 .col-1 {
-  width: ;
+.section02 .col {
+  width: 23.4%;
   float: left;
+  margin-right: 14.9%;
 }
 
 /* HEADER */
