@@ -376,8 +376,8 @@ h3 .byline, a img{
 }
 .footernav ul {
   list-style: none;
-  text-align: right;
-  float: right;
+  /*text-align: right;
+  float: right;*/
   margin: 0;
 }
 .footernav ul li {
@@ -450,6 +450,7 @@ h3 .byline, a img{
 }
 
 
+
   @media only screen and (max-width: 47.9999em) {
 
     body {
@@ -482,14 +483,15 @@ h3 .byline, a img{
 
     .mainnav ul {
       padding: .8em 0;
-      display: none;
-    }
-
-    .mainnav li {
       float: none;
     }
+
+    .mainnav ul li {
+      float: none;
+      display: block;
+    }
     .col4a{
-      margin:0;
+      margin:0
     }
 
     .section02 .col2,
@@ -501,8 +503,19 @@ h3 .byline, a img{
       margin: 1em 2%;
     }
 
-    .footernav {
-    display: none;
+    .footernav ul li{
+    display: block;
+
+
+    }
+    .footer .footernav{
+      float: none;
+      text-align: left;
+      padding-top: 2em;
+
+    }
+    .footer .logo{
+      float: none;
     }
 
     .section02 .col {
