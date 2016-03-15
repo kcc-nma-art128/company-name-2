@@ -250,9 +250,14 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 	margin: 0.125em;
 }
 
+.mainnav li a {
+	color: black;
+}
+
 .mainnav li:active {
   background: #ececec;
 }
+
 
 .mainnav span{
   font-size: .625em;
@@ -379,9 +384,61 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 
 
 .footer {
+	clear: both;
 	background: #ddd;
 	height: 15em;
 }
+
+.section4 {
+	width: 58.75em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	padding: 0;
+}
+
+.footerlogo {
+	margin-top: 3em;
+}
+
+.footerlogo p {
+	font-size: 0.625em;
+	color: #999;
+	line-height: .1em;
+}
+
+.footernav {
+	float: right;
+	clear: none;
+}
+
+.footernav li {
+	display: inline-block;
+	float: left;
+	margin-top: 3em;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: right;
+	line-height: 1em;
+	margin-left: 4em;
+}
+
+.footernav span {
+	font-weight: normal;
+	font-size: 0.625em;
+	color: #999;
+}
+
+.footernav li h2 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+
+
+
+
 
 /* MEDIA QUERIES
 Description: Define screen-size breakpoints here.
