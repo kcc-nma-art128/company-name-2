@@ -437,6 +437,47 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 
 
 
+/*ABOUT PAGE*/
+
+.hero2 {
+	margin-top: 1.875em;
+	margin-bottom: 1.875em;
+}
+
+.hero2 img {
+	width: 100%;
+}
+
+
+.about h1 {
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1em;
+	text-align: center;
+}
+
+.about .col-1 {
+	margin-left: 10em;
+	margin-right: 10em;
+}
+
+.about p {
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.about .col-1 span {
+	font-size: 0.625em;
+	color: #666;
+	text-align: center;
+}
+
+.about .col-1 p .paragraph {
+	text-align: left;
+}
+
+
 
 
 
