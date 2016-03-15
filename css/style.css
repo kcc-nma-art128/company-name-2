@@ -350,7 +350,7 @@ h3 .byline, a img{
 .footer{
   background:#ececec;
   border-top: 3px solid #cecece;
-  padding: 2.625em 0 5em 0;
+  padding: 2.625em 0 10em 0;
 }
 .footer .logo {
 	float: left;
@@ -425,4 +425,96 @@ h3 .byline, a img{
  float: left;
  margin-left : 0;
 
+}
+
+
+
+/* MEDIA QUERIES ========================= */
+
+@media only screen and (min-width: 48em) and (max-width: 62em) {
+
+  body {
+    font-size: 87.5%; /* 14px / 16px = 0.875 * 100 = 87.5% */
+  }
+
+  .container {
+    width: 92%;
+  }
+
+  .section02 .col2,
+  .section04.col4a,
+  .section04.col4b{
+    width: 30%;
+    margin-right: 5%;
+  }
+}
+
+
+  @media only screen and (max-width: 47.9999em) {
+
+    body {
+      font-size: 75%; /* 12px / 16px = 0.75 * 100 = 75% */
+    }
+
+    .container {
+      width: 96%;
+    }
+
+    .header {
+      height: 115px;
+    }
+
+    .logo {
+      padding-top: 1em;
+    }
+
+    .logo a {
+      position: static;
+      margin: 0 auto;
+      width: 250px;
+      padding-top: 43px;
+      background-size: 250px 43px;
+    }
+
+    .mainnav {
+      min-height: 60px;
+    }
+
+    .mainnav ul {
+      padding: .8em 0;
+      display: none;
+    }
+
+    .mainnav li {
+      float: none;
+    }
+    .col4a{
+      margin:0;
+    }
+
+    .section02 .col2,
+    .section04.col4a,
+    .section04.col4b,
+    .footer .col, {
+      width: 96%;
+      float: none;
+      margin: 1em 2%;
+    }
+
+    .footernav {
+    display: none;
+    }
+
+    .section02 .col {
+      margin-bottom: 3em;
+    }
+
+    .footer .col {
+      margin-bottom: 1em;
+    }
+
+    .copyright {
+      float: none;
+      margin: 0 2%;
+    }
 }
