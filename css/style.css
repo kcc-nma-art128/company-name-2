@@ -29,7 +29,7 @@
 /* #RESET
 ================================================== */
 * {
-	margin: 2.5%;
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
@@ -54,9 +54,6 @@ body{
 
 /* HEADINGS */
 
-h1, h2{
-	margin-bottom: .5em;
-}
 
 h1 {
 	font-size: 3em;
@@ -123,6 +120,7 @@ body {
 }
 
 header {
+	margin: 2em;
 	text-align: center;
 }
 
@@ -136,7 +134,8 @@ nav ul li{
 }
 
 footer ul li{
-	display: inline-block
+	float: left;
+	list-style: none;
 }
 
 
@@ -144,13 +143,12 @@ h1 {
   font-family: Helvetica;
   font-weight: bold;
   font-size: 2.3em; /* 42px */
-  line-height: 0; /* 50px */
 }
 
 h2 {
 	font-family: Helvetica;
   font-weight: bold;
-  font-size: 4em; /* 24px */
+  font-size: 3em; /* 24px */
   line-height: 1.25em; /* 30px */
   letter-spacing: .025em;
 	text-transform: none;
@@ -180,22 +178,19 @@ Description: Place grid and visual layout styling here.
 (e.g. containers, rows, columns)
 ===================================== */
 .section1 {
-	display: inline-block;
-	float: none;
-  width: 70%;
-  height: 350px;
   text-align: center;
-  margin: 1.5%;
 	padding: 3em;
 	background: #ddd;
 }
 
+.section1 h2 {
+	font-size: 5em;
+}
+
 .section2 {
-	display: inline-block;
-  width: 96%;
-  height: 300px;
   text-align: center;
-  margin: 1.5%;
+	padding: 3em;
+
 }
 
 .section2 .col-4 {
@@ -204,11 +199,8 @@ Description: Place grid and visual layout styling here.
 }
 
 .section3 {
-	display: inline-block;
-  width: 60%;
-  height: 550px;
   text-align: center;
-  margin: 3%;
+  padding: 3em;
 }
 
 .section3 .col-6 {
