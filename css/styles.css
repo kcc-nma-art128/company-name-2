@@ -4,19 +4,7 @@
   #SITE-SPECIFIC CSS
 ===================================== */
 
-
-/*
-=====================================
-========== BEGIN BASE CSS ===========
-=====================================
-*/
-
 /* BASE CSS (Initital Base Setup)
-Description: "Base" css is an initial set of core
-styles that can be used (and reused) as a start
-for most sites. It should be placed at the top so
-it can be over-written by site-specific styling
-below.
 =====================================
   #RESET
   #HTML5
@@ -29,7 +17,6 @@ below.
   #IMAGES
   #CLEARFIX
 ===================================== */
-
 
 /* #RESET
 ================================================== */
@@ -56,8 +43,7 @@ body {
 
 /* HEADINGS
 Based on a Traditional Typographic Scale:
-48, 36, 24, 21, 18, 16
-================================================== */
+48, 36, 24, 21, 18, 16 */
 
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: .5em;
@@ -95,9 +81,8 @@ h6 {
 
 /* Paragraphs */
 p {
-	margin-bottom: .5em;
+	margin-bottom: 2em;
 }
-
 
 /* Links */
 a {
@@ -134,7 +119,6 @@ a img {
 	border: none;
 }
 
-
 /* CLEARFIX */
 .group:after {
   content: "";
@@ -142,61 +126,50 @@ a img {
   clear: both;
 }
 
-/* END BASE CSS */
-
 /* SITE SPECIFIC CSS */
 
 body {
-	background: #ddd;
+	background: #fff;
 }
 
 .container {
 	position: relative;
-	width: /* */
-	padding:
-	margin:
+	width: 48em; /* 960px / 16px = 60em / 1.25em = 48em */
+	padding: 0 0.625em;
+	margin: 0 auto;
 }
 
 h1 {
 	font-family:Helvetica, Arial, sans-serif;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 2.625em; /* 42px */
-	line-height:
+  line-height: 1.19em; /* 50px */
+}
 }
 
 h2 {
 	font-family:Helvetica, Arial, sans-serif;
-	font-weight: bold;
+	font-weight: normal;
 	font-size: 2.625em; /* 42px */
-	line-height:
+	line-height: -.025em;
 }
 
 h3 {
-	font-family:Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	font-size: 2.625em; /* 42px */
-	line-height:
+	font-size: 1.3125em; /* 21px */
+	line-height: 1.143em; /* 24px */
+	letter-spacing: -.04em;
 }
 
 h4 {
-	font-family:Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	font-size: 2.625em; /* 42px */
-	line-height:
+	font-weight: normal;
+	font-size: .6875em; /* 11px */
+	line-height:1.27em; /* 14px */
 }
 
-/* SITE-SPECIFIC TYPOGRAPHY
-Description: Adjust the base typography settings above
-with site-specific styles here.
-(e.g. headings, paragraphs, colors, etc.)
-===================================== */
+/* SITE-SPECIFIC TYPOGRAPHY */
 
-
-
-/* LAYOUT/GRID
-Description: Place grid and visual layout styling here.
-(e.g. containers, rows, columns)
-===================================== */
+/* LAYOUT/GRID */
 .container {
 	/* Fixed width: 960px */
     width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
@@ -205,6 +178,28 @@ Description: Place grid and visual layout styling here.
 	background: #fff;
 }
 
+
+
+.section01 {
+
+}
+
+.section02 {
+	
+}
+
+.section03 {
+
+}
+
+
+/* HEADER */
+.tagline {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	text-transform: uppercase;
+}
 
 .footer {
 	background: #ccc;
