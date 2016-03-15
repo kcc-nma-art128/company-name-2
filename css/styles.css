@@ -172,10 +172,9 @@ h4 {
 /* LAYOUT/GRID */
 .container {
 	/* Fixed width: 960px */
-    width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin: 2em auto;
-	padding: 5em;
-	background: #fff;
+  width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
+	margin: 0 auto;
+	padding: 0 1em;
 }
 
 
@@ -185,7 +184,7 @@ h4 {
 }
 
 .section02 {
-	
+
 }
 
 .section03 {
@@ -194,11 +193,75 @@ h4 {
 
 
 /* HEADER */
+.header {
+	height: 155px;
+	text-align: center;
+}
+
+.logo {
+	margin-top: 80px;
+	margin-bottom: 0;
+}
+
+.logo a {
+	display: block;
+	background-repeat: no-repeat;
+}
+
 .tagline {
 	margin: 0;
 	padding: 0;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+/* Main Nav */
+.main-nav {
+	background: #fff;
+}
+
+.main-nav ul {
+	margin: 0;
+	list-style: none;
+	text-align: center;
+}
+
+.main-nav li {
+	margin: 0;
+	display: inline-block;
+}
+
+.main-nav li small {
+	display: block;
+}
+
+.main-nav li a{
+	padding: 1em;
+	display: block;
+}
+
+.main-nav a:hover {
+	background: #aaa;
+	color: #333;
+}
+
+.main-nav a:active {
+	color: #53aee0;
+	background: transparent;
+}
+
+/* section01 */
+.section01 {
+	background: #ececec;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.section01 h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 5.950em; /* 95.21 px */
+	line-height: 5.950em; /* 95.21px */
 }
 
 .footer {
