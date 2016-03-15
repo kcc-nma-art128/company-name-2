@@ -174,13 +174,16 @@ h4 {
 	/* Fixed width: 960px */
   width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
 	margin: 0 auto;
-	padding: 0 1em;
+	padding: 0 4em;
 }
 
-
+.header a {
+	color: #000;
+}
 
 .section01 {
-
+	width: 60%;
+	margin: 0 auto;
 }
 
 .section02 {
@@ -235,35 +238,47 @@ h4 {
 	display: block;
 }
 
-.main-nav li a{
+.main-nav li a {
 	padding: 1em;
 	display: block;
 }
 
 .main-nav a:hover {
-	background: #aaa;
-	color: #333;
+	background: #ececec;
+	color: #000;
 }
 
 .main-nav a:active {
-	color: #53aee0;
+	color: #000;
 	background: transparent;
 }
 
 /* section01 */
 .section01 {
-	background: #ececec;
 	padding-top: 2em;
 	padding-bottom: 2em;
+	text-align: center;
+	background: #ececec;
 }
 
 .section01 h2 {
 	font-family: Helvetica, Arial, sans-serif;
-	font-weight: normal;
 	font-size: 5.950em; /* 95.21 px */
-	line-height: 5.950em; /* 95.21px */
+	font-weight: 600;
 }
 
+.section02 {
+padding-top: 2em;
+padding-bottom: 2em;
+	display: inline-block;
+}
+
+.section02 h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 2.25em; /* 36px */
+}
+
+/* Footer */
 .footer {
 	background: #ccc;
 }
