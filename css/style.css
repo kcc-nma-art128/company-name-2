@@ -114,10 +114,12 @@ body {
 
 .container {
   position: relative;
-  width: 55em; /* 960px / 16px = 60em */
+  width: 47em; /* 960px / 16px = 60em */
   padding: 0 .625em;
   margin: 0 auto;
 }
+
+
 
 header {
 	margin: 2em;
@@ -127,6 +129,7 @@ header {
 
 nav {
 	text-align: center;
+	margin: 2em;
 }
 nav ul li{
 	display: inline-block
@@ -157,7 +160,7 @@ h2 {
 h3 {
 	font-family: Helvetica;
   font-weight: bold;
-  font-size: 2em; /* 24px */
+  font-size: 3em; /* 24px */
   line-height: 1.25em; /* 30px */
   letter-spacing: -.025em;
 	text-decoration: none;
@@ -167,7 +170,7 @@ h3 {
 h6 {
 	font-family: Helvetica;
   font-weight: bold;
-  font-size: 1.2em; /* 24px */
+  font-size: 2em; /* 24px */
   line-height: 1.25em; /* 30px */
   letter-spacing: -.025em;
 	text-decoration: none;
@@ -188,8 +191,7 @@ Description: Place grid and visual layout styling here.
 }
 
 .section2 {
-  text-align: center;
-	padding: 5em;
+	padding: 2em;
 
 }
 
@@ -200,13 +202,14 @@ Description: Place grid and visual layout styling here.
 
 .section3 {
   text-align: center;
-  padding: 3em;
+  padding: 1.5em;
 }
 
 .section3 .col-6 {
+	text-align: left;
 	float: left;
 	width: 47%;
-	padding: 3em;
+	padding: 4em;
 }
 
 .section3 ul {
