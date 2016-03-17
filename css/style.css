@@ -151,10 +151,10 @@ header {
 
 
 nav {
+	width: 56em;
+	margin-left: 15em;
 	text-align: center;
-	margin: 1em;
-	padding-top: .7%;
-	padding-bottom: .1%;
+	padding-top: 1em;
 	color: #999;
 	border-top: 2px solid #d5d5d5;
 	border-bottom: 2px solid #d5d5d5;
@@ -225,6 +225,7 @@ Description: Place grid and visual layout styling here.
   text-align: center;
 	padding: 3.4em;
 	background: #ddd;
+	margin-top: 3em;
 }
 
 .section1 h2 {
@@ -267,9 +268,15 @@ h4.byline {
   padding: 1em;
 }
 
+.section3 h2 {
+	border-top: 1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
+
+}
+
 .section3 p {
 	padding: 3em;
-	border-bottom: 2px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
 }
 
 .section4 .col-6 {
