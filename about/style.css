@@ -229,7 +229,7 @@ header .tagline {
   background-color: #fff;
   text-align: center;
 	line-height: 0.875em;
-		margin: 2px auto;
+	margin: 2px auto;
 }
 .mainnav a:hover {
   background-color: #ececec;
@@ -241,84 +241,82 @@ header .tagline {
   list-style: none;
 }
 
-.section1 h2  {
+.section2 h1 {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 5.946em;
-	font-weight: bold;
-	line-height:.75em;
+	font-size: 3em;
+	line-height:1.25em;
 	color:#000;
-	text-align: center;
-}
-
-.section1 p  {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1.316em;
-	font-weight: lighter;
-	line-height: 1.55em;
-	color:#000;
-	text-align: center;
+	letter-spacing: normal;
 }
 
 .section2 h3 {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 2.25em;
-	line-height: .2em;
+	font-size: 1.5em;
+	font-weight: lighter;
 }
 
-.section2 h4  {
+.section2 small {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 0.625em;
-	color: #666666;
+	font-weight: normal;
+	color: #666;
 }
 
-.section2 img {
-	padding: .5em 0 .7em 0;
+.section2 h5 b {
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.section2 h5 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.313em;
+	font-weight: 100;
+	color: #000;
+	text-align: justify;
 }
 
 .section2 p {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: lighter;
-	line-height: 1.5em;
+	text-align: justify;
 }
 
-.section3 h2 {
+.section2 .indent {
 	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	letter-spacing: 0.03em;
-	border-bottom: 1px #d6d6d6 solid;
-	padding: .5em 0 .5em 0;
+	font-size: 1em;
+	text-indent: 40px;
+	margin-top: -6px;
 }
 
-.section3 p {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 1.316em;
-	line-height: 1.5em;
-	letter-spacing: 0.03em;
-	font-weight: lighter;
-	padding: 1em 0 1em 0;
-}
-
-.section6 ul{
+.section2 p b {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1.125em;
-	font-weight: bold;
-	letter-spacing: 0.01em;
+	font-weight: 600;
+	text-align: justify;
 }
 
-.section6 ul li{
-	font-family: 'Helvetica', Arial, sans-serif;
-	font-size: .9em;
-	font-weight: 100;
-	line-height: 1.25em;
-	margin:1em;
-	margin: 0;
-	padding:0;
-	list-style: none;
-	letter-spacing: normal;
-	list-style-type: none;
-  list-style-position:inside;
+
+.section2 .quote {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: lighter;
+	background-color: #eee;
+	border-top: 3px #aaa solid;
+	border-bottom: 3px #aaa solid;
+	padding: 35px 50px;
+	margin: 30px 0;
+	text-align: left;
+	text-indent: 0;
+}
+
+.section2 .subhead{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.313em;
+	text-transform: uppercase;
+	text-align: justify;
+	text-indent: 0;
+	font-weight: bold;
 }
 
 .footer .col {
@@ -385,67 +383,18 @@ header {
 .section1 .row {
 	background: #ececec;
 	border-radius: 20px;
-	padding:5em;
+	padding:9em;
 	margin:1.875em 0;
+	text-align: center;
+	height: 380px;
 }
 
-.section2 .col-1,
-.section2 .col-2,
-.section2 .col-3 {
-	width: 32%; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin-right: 2%;
-	margin-top: 1.875em;
-	margin-bottom: 2.5em;
-	float: left;
-	background: none;
-}
-
-.section2 .col-3 {
-	margin-right: 0;
-}
-
-.section3 .col-1 {
- 	text-align: center;
-	display: inline-block;
-	width: 100%;
-	border-top: #d5d5d5 1px solid;
-	border-bottom: #d5d5d5 1px solid;
-	padding: 2px 0;
-}
-
-.section6 {
-	margin-top: 4.5em;
-}
-.section6 .col-1,
-.section6 .col-2,
-.section6 .col-3,
-.section6 .col-4,
-.section6 .col-5,
-.section6 .col-6 {
-	/* Fixed width: 960px */
-    width: 32%; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin-left: 16.66%;
-	float:left;
-	background: none;
-}
-
-.section6 .col-2,
-.section6 .col-4,
-.section6 .col-6 {
-	/* Fixed width: 960px */
-    width: 32%; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin: 0 0 2.9% 8.33%;
-	float:left;
-	background: none;
-}
-.section6 .col-5 {
-	margin-bottom: 100px;
-}
-
-.section6 i {
-	margin: 0 6% 0 0;
-	float: left;
-	height:70px;
+.section2 .row {
+	width: 660px;
+	background-color: white;
+	margin: auto;
+	margin-bottom:5em;
+	text-align: center;
 }
 
 .footer {
