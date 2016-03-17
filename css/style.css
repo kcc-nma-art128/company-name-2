@@ -57,7 +57,7 @@ body{
 
 h1 {
 	font-size: 3em;
-	line-height: 1em;
+	line-height: 1.4em;
 }
 
 h2 {
@@ -65,11 +65,34 @@ h2 {
   line-height: 1.1em;
 }
 
-/* PARAGPRAHS */
-p {
-  margin-bottom: .5em;
+h3 {
+	font-size: 1.5em;
+	line-height: 1.25em; }
+
+h4 {
+	font-size: 1.3125em;
+	line-height: 1.3em;
 }
 
+h5 {
+	font-size: 1.125em;
+	line-height: 1.35em;
+}
+
+h6 {
+	 font-size: 1em;
+	 line-height: 1.4em;
+ }
+
+/* PARAGPRAHS */
+p {
+  margin-bottom: 1.25em;
+}
+/* #Links
+================================================== */
+a { color: black; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #39c; }
+p a, p a:visited { line-height: inherit; }
 /* LISTS */
 
 /* IMAGES */
@@ -114,7 +137,7 @@ body {
 
 .container {
   position: relative;
-  width: 47em; /* 960px / 16px = 60em */
+  width: 56em; /* 960px / 16px = 60em */
   padding: 0 .625em;
   margin: 0 auto;
 }
@@ -122,46 +145,58 @@ body {
 
 
 header {
-	margin: 2em;
+	margin: 3em;
 	text-align: center;
 }
 
 
 nav {
 	text-align: center;
-	margin: 2em;
+	margin: 1em;
+	padding-top: .7%;
+	padding-bottom: .1%;
+	color: #999;
+	border-top: 2px solid #d5d5d5;
+	border-bottom: 2px solid #d5d5d5;
 }
+
+nav ul li a {
+	padding: .5em 3em;
+	font-weight: bold;
+}
+
+
 nav ul li{
 	display: inline-block
-
 }
 
-footer ul li{
-	float: left;
-	list-style: none;
-}
+
+
+
 
 
 h1 {
   font-family: Helvetica;
   font-weight: bold;
-  font-size: 3.5em; /* 42px */
+  font-size: 3em; /* 42px */
+
 }
 
 h2 {
 	font-family: Helvetica;
   font-weight: bold;
-  font-size: 3em; /* 24px */
-  line-height: 1.25em; /* 30px */
+  font-size: 1.8em; /* 24px */
+  line-height: 1.9em; /* 30px */
   letter-spacing: .025em;
-	text-transform: none;
+	text-transform: uppercase;
+
 }
 
 h3 {
 	font-family: Helvetica;
   font-weight: bold;
-  font-size: 3em; /* 24px */
-  line-height: 1.25em; /* 30px */
+  font-size: 2em; /* 24px */
+  line-height: 1em; /* 30px */
   letter-spacing: -.025em;
 	text-decoration: none;
 }
@@ -170,7 +205,7 @@ h3 {
 h6 {
 	font-family: Helvetica;
   font-weight: bold;
-  font-size: 2em; /* 24px */
+  font-size: 1.4em; /* 24px */
   line-height: 1.25em; /* 30px */
   letter-spacing: -.025em;
 	text-decoration: none;
@@ -180,14 +215,21 @@ h6 {
 Description: Place grid and visual layout styling here.
 (e.g. containers, rows, columns)
 ===================================== */
+
+.header p {
+	color: #999;
+}
+
+
 .section1 {
   text-align: center;
-	padding: 5em;
+	padding: 3.4em;
 	background: #ddd;
 }
 
 .section1 h2 {
-	font-size: 7em;
+	font-size: 4.5em;
+	text-transform: none;
 }
 
 .section2 {
@@ -198,45 +240,93 @@ Description: Place grid and visual layout styling here.
 .section2 .col-4 {
   float: left;
   width: 30%;
+	margin-right: 5%;
 }
+
+.section2 .col-4:last-of-type {
+	margin-right: 0;
+
+}
+
+.section2 .col-4 img {
+	width: 100%;
+	height: auto;
+}
+
+h4.byline {
+	font-size: .625em;
+	line-height: .625em;
+	color: #999;
+	margin: .75em 0;
+	font-weight: normal;
+}
+
 
 .section3 {
   text-align: center;
-  padding: 1.5em;
+  padding: 1em;
 }
 
-.section3 .col-6 {
+.section3 p {
+	padding: 3em;
+	border-bottom: 2px solid #d5d5d5;
+}
+
+.section4 .col-6 {
 	text-align: left;
 	float: left;
 	width: 47%;
-	padding: 4em;
+	padding: 2em 4em 0 4em;
+
 }
 
-.section3 ul {
+.section4 ul {
 	list-style: none;
+	margin: 0 0 6em 0;
 }
 
-.section3 li .fa {
+.section4 li .fa {
 	float: left;
+	font-size: 3.5em;
+	clear:both;
+	margin-bottom: 1em;
+	margin-right: .5em;
 }
 
 .footer {
-  height: 600px;
+  height: 550px;
 	background: #ddd;
 }
 
 .footer .logo {
-	margin-top: 2%;
+	margin-top: 10%;
 	float: left;
-	width: 35%;
+	width: 30%;
 }
 
 .footer ul {
-	margin-top: 2%;
+	margin-top: 10%;
+	text-align: right;
 	float: right;
-	width: 40%;
+	width: 60%;
 }
 
+
+.footer ul li{
+	list-style: none;
+	display: inline-block;
+	padding-top: .5em;
+	padding-left: 1em;
+}
+
+.footer ul li a{
+font-weight: bold;
+}
+
+.footer p {
+	font-size: 0.625em;
+	color: #999;
+}
 
 /* SECTIONS
 Description: Style major site sections here.
