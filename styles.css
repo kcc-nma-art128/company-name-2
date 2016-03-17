@@ -429,7 +429,7 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 	text-transform: capitalize;
 	text-align: right;
 	line-height: 1em;
-	margin-left: 4em;
+	margin-left: 3em;
 }
 
 .footernav span {
@@ -444,6 +444,9 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 	font-weight: bold;
 }
 
+.footer a {
+	color: #000;
+}
 
 
 /*ABOUT PAGE*/
@@ -459,6 +462,7 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 
 .about {
 	width: 48.75em;
+	margin: 0 auto;
 }
 
 .about h1 {
@@ -466,16 +470,20 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 	font-weight: bold;
 	line-height: 1em;
 	text-align: center;
+	padding: 0;
 }
 
 .about .col-1 {
 	width: 38.75em;
+	margin: 0 auto;
+	padding-bottom: 24em;
 }
 
-.about .col-1 span {
+.about .col-1 .date {
 	font-size: 0.625em;
 	color: #666;
 	text-align: center;
+	margin: 0 auto;
 }
 
 .about .paragraph1 {
@@ -488,25 +496,55 @@ asides, sidebars, footer, sub page-specific styling, etc.)
 .about .paragraph2 {
 	font-size: 1.325em;
 	text-align: left;
+	line-height: 1.3em;
 }
 
 .about .paragraph2 span {
-	font-size: 1.5em;
-	font-style: bold;
+	font-size: 1.1em;
+	font-weight: bold;
 	text-transform: uppercase;
+	color: #000;
 }
 
 .about .paragraph3 {
 	font-size: 1em;
 	text-align: left;
+	text-indent: 2em;
 }
 
-.about .col-1 .paragraph3 span {
-	font-size: 1.125em;
+
+.quote {
+	border-top: 3px solid #aaa;
+	border-bottom: 3px solid #aaa;
+	background-color: #eee;
+	padding-top: 2em;
+	padding-bottom: 3em;
+	padding-left: 3em;
+	padding-right: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+.about .paragraph4 {
+	font-size: 1em;
+	text-align: left;
+	text-indent: 2em;
+}
+
+.about .col-1 .paragraph4 h4 {
+	text-transform: uppercase;
+	color: #000;
+	font-size: 1.3125em;
 	font-weight: bold;
 }
 
 
+.about .col-1 .paragraph5 {
+	text-indent: 2em;
+}
+
+.about h5 {
+	line-height: 1em;
+}
 
 
 /* MEDIA QUERIES
