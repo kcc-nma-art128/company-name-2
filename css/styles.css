@@ -86,12 +86,12 @@ p {
 
 /* Links */
 a {
-	color: #39c;
+
 	text-decoration: none;
 }
 
 a:visited, a:hover, a:focus {
-	color: #069;
+
 }
 
 
@@ -182,6 +182,11 @@ h4 {
 	color: #000;
 }
 
+.section01 {
+	margin: 0 auto;
+	padding-top: 1em;
+}
+
 .section02 {
 	width 50%
 	margin: 0 auto;
@@ -205,6 +210,11 @@ h4 {
 	margin: 0 auto;
 }
 
+.footer {
+  width: 100%;
+  float: left;
+
+}
 
 /* HEADER */
 .header {
@@ -321,6 +331,7 @@ h4 {
 .footer  ul li {
 	margin: 0;
 	list-style: none;
+	display: inline-block;
 }
 
 .footer  ul li a {
