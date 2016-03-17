@@ -174,8 +174,6 @@ h4 {
 	/* Fixed width: 960px */
   width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
 	margin: 0 auto;
-	padding: 0 4em;
-	border: 1em;
 }
 
 .header a {
@@ -188,10 +186,8 @@ h4 {
 }
 
 .section02 {
-	width 50%
 	margin: 0 auto;
-	padding: 0 auto;
-	display: inline-block;
+	display: block;
 }
 
 .section02 .col {
@@ -213,7 +209,9 @@ h4 {
 .footer {
   width: 100%;
   float: left;
-
+}
+.footer .col {
+	float: right;
 }
 
 /* HEADER */
@@ -261,10 +259,12 @@ h4 {
 
 .main-nav li small {
 	display: block;
+	font-size: .625em;
 }
 
 .main-nav li a {
-	padding: 1em;
+	padding: .5em 1em;
+	line-height: 1.25em;
 	display: block;
 }
 
@@ -280,6 +280,7 @@ h4 {
 
 /* section01 */
 .section01 {
+	margin-top: 2em;
 	padding-top: 2em;
 	padding-bottom: 2em;
 	text-align: center;
@@ -291,12 +292,6 @@ h4 {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 5.950em; /* 95.21 px */
 	font-weight: 600;
-}
-
-.section02 {
-	padding-top: 2em;
-	padding-bottom: 2em;
-	display: inline-block;
 }
 
 .section02 h3 {
@@ -319,19 +314,22 @@ h4 {
 }
 
 /* section03 */
-.section03 {
+.section03 col{
 
 }
 
+
+
 /* Footer */
 .footer {
+	padding: 2em 0;
 	background: #ccc;
 }
 
 .footer  ul li {
 	margin: 0;
 	list-style: none;
-	display: inline-block;
+
 }
 
 .footer  ul li a {
@@ -340,8 +338,8 @@ h4 {
 	font-size:
 	line-height: normal;
 	font-family: Helvetica, Arial, san-serif;
-	font-weight: bold;
-	text-transform: uppercase;
+
+
 }
 /* SECTIONS
 Description: Style major site sections here.
