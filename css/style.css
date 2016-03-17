@@ -231,10 +231,13 @@ Description: Place grid and visual layout styling here.
 ===================================== */
 .container {
 	/* Fixed width: 960px */
-    width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
+  width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
 	margin: 2em auto;
-	padding: 5em;
+	padding: 2em;
 	background: #ececec;
+	.round {border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
 }
 
 /* SECTIONS
