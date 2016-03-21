@@ -254,7 +254,7 @@ header {
 
 
 
-/*CONTENT=====================================*/
+/*HOME=====================================*/
 /*Section1===================*/
 .section01 img{
   border-radius: 20px;
@@ -397,7 +397,7 @@ h3 .byline, a img{
 	color: #999;
 	font-weight: normal;
 }
-/*=====HOME SPECIFIC=====================================*/
+/*=====ABOUT SPECIFIC=====================================*/
 article img {
   margin: 2em 0;
 }
@@ -408,39 +408,63 @@ article h1 {
   hyphens: auto;
 }
 
-article h2{
+.col-article h2{
   font-weight: normal;
   font-size: 1.5em;
   line-height: 1.25em;
   text-align: center;
   /*word-break: break-all;
   hyphens: auto;*/
-  padding: 0.75em 160px ;
+  /*padding: 0.75em 160px ;*/
 
 }
-article .date{
+.col-article .date{
+  font-size: 0.625em;
+  line-height: 1.56em;
+  color: #666666;
   text-align: center;
-  padding-bottom: 1em;
+  margin: 1.5em 0;
+}
+
+
+.col-article h5{
+  margin:0;
+}
+
+.col-article h4{
+  font-size: 1.3em;
+  line-height: 2.28em;
+  color: #090708;
+  text-transform: uppercase;
 }
 
 .col-article h3{
-  font-weight: bold;
-  font-size: 1.475em;
-  line-height: 1.16em;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5em;
+  line-height: 1.16em;
   text-align: left;
-
 }
 
- .p1{
-  font-size: 1.5em;
-  line-height: 1.5em;
+.col-article p+p{
+  text-indent: 2em;
+  margin-top: -1.25em;
+}
+
+.col-article p:first-of-type {
+  font-size: 1.3125em;
+  line-height: 1.33em;
   word-break: break-all;
   hyphens: auto;
-  margin-bottom: 0.75px;
+  text-indent: 0;
 }
-article blockquote {
-  padding: 2em 3em;
+
+blockquote {
+  padding: 2.5em 2.5em;
+  border-top: 3px solid #acacac;
+  border-bottom:  3px solid #acacac;
+  background: #eeeeee;
+  margin-bottom: 1.5em;
 }
 
 
@@ -479,7 +503,7 @@ article blockquote {
 
 .col-article{
   width: 620px;
-  margin:0.75em 160px;
+  margin: 30px 160px;
 
 }
 /*============*/
