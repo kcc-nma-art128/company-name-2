@@ -527,6 +527,11 @@ blockquote {
     width: 30%;
     margin-right: 5%;
   }
+
+  .col-article{
+   width: 90%;
+   margin:5%;
+  }
 }
 
 
@@ -609,5 +614,11 @@ blockquote {
     .copyright {
       float: none;
       margin: 0 2%;
+    }
+
+
+    .col-article{
+     width: 80%;
+     margin:10%;
     }
 }
