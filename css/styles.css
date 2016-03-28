@@ -126,7 +126,7 @@ li {
 .row:before,
 .row:after {
   content: "";
-  display: inline-block;;
+  display: table;
 }
 
 .row:after {
@@ -357,10 +357,8 @@ margin-right: 2%;
 
 /* SECTION 03 */
 .section03 {
-  padding-left: 20%;
   text-align: center;
-  width: 940px;
-  display: inline-block;
+  display: block;
 }
 
 .section03 h2 {
@@ -458,8 +456,13 @@ padding: 30px;
   display: inline-block;
 }
 
+.footer h1 {
+  font-size: 16pt;
+}
+
 .footer .logo a:active {
-  color: #000
+  color: #000;
+  text-decoration: none;
 }
 
 .footer ul{
@@ -478,6 +481,13 @@ padding: 30px;
 
 .footer .logo h1 {
   margin-top: 1em;
+  font-weight: bold;
+  font-size: 32pt;
+  text-decoration: none;
+}
+
+.footer .copyright {
+  font-size: 10pt;
 }
 
 .left-nav {
@@ -488,10 +498,13 @@ padding: 30px;
 
 .right-nav {
   margin-top: 2em;
+  margin-bottom: none;
   float: right;
   color: #999;
+  font-size: 10pt;
 }
 
 .footer .small{
+margin: 0;
 color: #999;
 }
