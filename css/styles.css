@@ -380,6 +380,11 @@ margin-right: 2%;
   border-bottom: 2px solid #ececec;
 }
 
+.section03 h6 {
+  text-align: left;
+  padding-left: 20px;
+}
+
 .section03 ul{
   margin: 0;
   padding: 0;
@@ -390,10 +395,19 @@ margin-right: 2%;
   text-align: left;
 }
 
+.section03 .row {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .section03 .col-6 {
-  width: 40%;
+  width: 50%;
   float: left;
-  margin-right: 2%;
+}
+
+.section03 .col-7 {
+  width: 50%;
+  float: right;
 }
 
 .section03 .fa-bookmark {
