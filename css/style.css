@@ -44,119 +44,141 @@ below.
 /* #HTML5
 ================================================== */
 header, section, footer, aside, nav, article, figure {
-	display: block
+	display: block;
 }
 
-/* #BASE TYPOGRAPHY
+/* #BASE TYPOGRAPHY (em-based)
 ================================================== */
+
+/*
+=================================================
+    Basic text sizing
+=================================================
+    Set your main font size for paragraph
+
+    Reference
+    62.5%  => 10px
+    68.8%  => 11px
+    75%    => 12px
+    81.3%  => 13px
+    87.5%  => 14px
+    100%   => 16px (Default)
+    112.5% => 18px
+    125%   => 20px
+
+*/
 
 /* #BODY */
 body {
-	font-family: Helvetica, Arial, sans-serif;
-	font-size: 100%; /* 1em = 16px */
-	line-height: 1.5em; /* 16px x 1.5em = 24px */
-	color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%; /* 1em = 16px */
+    line-height: 1.5em; /* 16px x 1.5em = 24px */
+
 }
-/* #nav */
-nav {
-width:750px;
-margin:0 auto;
-list-style:none;
-}
-#nav li {
-float:left;
-}
-#nav a {
-display:block;
-text-align:center;
-width:150px; /* fixed width */
-text-decoration:none;
-}
+
+
 /* #HEADINGS
-Based on a Traditional Typographic Scale:
-48, 36, 24, 21, 18, 16
-================================================== */
+
+    Based on a Traditional Typographic Scale
+    48, 36, 24, 21, 18, 16
+
+*/
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: .5em;
+    margin-bottom: .5em;
 }
 
 h1 {
-	font-size: 3em; /* 48px / 16px = 3em */
-	line-height: 1em;
+    font-size: 3em; /* 48px / 16px = 3em */
+    line-height: 1em;
 }
 
 h2 {
-	font-size: 2.25em; /* 36px / 16px = 2.25em */
-	line-height: 1.1em;
-	text-align:center;
+    font-size: 2.5em; /* 36px / 16px = 2.25em */
+    line-height: 1em;
+		color: #000000;
 }
 
 h3 {
-	font-size: 1.5em; /* 24px / 16px = 1.5em */
-	line-height: 1em;
-	text-align:center;
+    font-size: 2em; /* 24px / 16px = 1.5em */
+    line-height: 1em;
 }
 
 h4 {
-	font-size: 1.3125em; /* 21px / 16px = 1.3125em */
-	line-height: 1em;
-	text-align:center;
+    font-size: 2em; /* 21px / 16px = 1.3125em */
+    line-height: 1em;
 }
 
 h5 {
-	font-size: 1.125em; /* 18px / 16px = 1.125em */
-	line-height: 1em;
-	text-align:center;
+    font-size: 2em; /* 18px / 16px = 1.125em */
+    line-height: 1em;
 }
 
 h6 {
-	font-size: 1em; /* 16px / 16px = 1em */
-	line-height: 1.5em;
-
+    font-size: 1em; /* 16px / 16px = 1em */
+    line-height: 1.5em;
 }
 
-/* #Paragraphs
+/* #PARAGRAPHS
 ================================================== */
 p {
-	margin-bottom: .5em;
-
+    margin-bottom: .5em;
 }
 
 
-/* #Links
+/* #LINKS
 ================================================== */
-a { color: #39c; text-decoration: none; }
-a:visited, a:hover, a:focus { color: #069; }
+    a { color: #39c; text-decoration: none; }
+    a:visited, a:hover, a:focus { color: #069; }
 
 
-/* #Lists
+/* #LISTS
 ================================================== */
 ul, ol {
-	margin-bottom: .5em;
+    margin-bottom: .5em;
 }
 
 ul li ul, ul li ol, ol li ul, ol li ol {
-	margin: 0;
+    margin: 0;
 }
 
 li {
-	margin-left: 1.875em;
+    margin-left: 1.875em;
 }
-/* #footer */
-#footer {
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:#999;
+ul.nav  {
+  list-style: none;
+  margin: 1em;
+  padding: 1em;
+  overflow: hidden;
+  text-align: center;
+  border-bottom;
+  border-top;
+}
+.nav li {
+  display: inline-block;
 }
 
-/* IE 6 */
-* html #footer {
-   position:absolute;
-   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+.nav li a {
+  display: inline;
+  color: black;
+  text-align: center;
+
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/* #footer */
+ul.nav {
+	margin-left: 1.875em;
+	list-style: none;
+	margin: 1em;
+	padding: 1em;
+	overflow: hidden;
+	text-align: center;
+	border-bottom;
+	border-top;
 }
 
 
@@ -174,7 +196,7 @@ a img {
 
 /* #CLEARFIX
 ================================================== */
-.group:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
@@ -199,22 +221,7 @@ site-specific visual design styles. Site-specific
 css should be placed on the bottom to
 override any base styling above it.
 =====================================
-	#SITE-SPECIFIC BASE STYLING
-	#SITE-SPECIFIC TYPOGRAPHY
-	#LAYOUT/GRID
-	#SECTIONS
-	#MEDIA QUERIES
-	#@FONT-FACE
-===================================== */
 
-/* SITE-SPECIFIC BASE STYLING
-Description: Adjust general base settings above with
-site-specific styles here.
-(e.g. body background color)
-===================================== */
-
-body {
-	background:
 }
 
 /* SITE-SPECIFIC TYPOGRAPHY
@@ -232,14 +239,20 @@ Description: Place grid and visual layout styling here.
 .container {
 	/* Fixed width: 960px */
   width: 50em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
-	margin: 2em auto;
-	padding: 2em;
-	background: #ececec;
-	.round {border-radius: 15px;
+	margin: 0em auto;
+	padding: 1em;
+	background: #ffffff;
+}
+.round {
+	border-radius: 15px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
 }
-
+.columns
+{
+	width: 33%;
+	float: left;
+}
 /* SECTIONS
 Description: Style major site sections here.
 (e.g. header, navs/navigation, site-specific content sections,
