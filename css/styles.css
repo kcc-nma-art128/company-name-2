@@ -119,6 +119,11 @@ a img {
 }
 
 /* CLEARFIX */
+.row {
+	content: "";
+	clear: both;
+}
+
 .group:after {
   content: "";
   display: table;
@@ -166,7 +171,6 @@ h4 {
 	line-height:1.27em; /* 14px */
 }
 
-/* SITE-SPECIFIC TYPOGRAPHY */
 
 /* LAYOUT/GRID */
 .container {
@@ -358,15 +362,20 @@ a.nav-toggle:hover {
 .footer {
 	padding: 2em 0;
 	background: #ccc;
+
 }
 
-.footer  ul li {
+.footer-nav ul {
+float: right;
+}
+
+.footer-nav  ul li {
 	margin: 0;
 	list-style: none;
 
 }
 
-.footer  ul li a {
+.footer-nav ul li a {
 	display: block;
 	color: #ececec;
 	font-size:
