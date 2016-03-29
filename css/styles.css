@@ -352,11 +352,14 @@ a.nav-toggle:hover {
 }
 
 /* section03 */
-.section03 col{
-
+.section03 {
+padding-top: 2em;
+padding-bottom: 2em;
 }
 
-
+.section03 h2 {
+font-size: 5em;
+}
 
 /* Footer */
 .footer {
