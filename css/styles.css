@@ -355,6 +355,7 @@ margin-right: 2%;
   margin-right: 0;
 }
 
+
 /* SECTION 03 */
 .section03 {
   text-align: center;
@@ -470,10 +471,6 @@ padding: 30px;
   display: inline-block;
 }
 
-.footer h1 {
-  font-size: 16pt;
-}
-
 .footer .logo a:active {
   color: #000;
   text-decoration: none;
@@ -496,12 +493,12 @@ padding: 30px;
 .footer .logo h1 {
   margin-top: 1em;
   font-weight: bold;
-  font-size: 32pt;
+  font-size: 2em;
   text-decoration: none;
 }
 
 .footer .copyright {
-  font-size: 10pt;
+  font-size: 10px;
 }
 
 .left-nav {
@@ -515,7 +512,7 @@ padding: 30px;
   margin-bottom: none;
   float: right;
   color: #999;
-  font-size: 10pt;
+  font-size: 10px;
 }
 
 .footer .small{
