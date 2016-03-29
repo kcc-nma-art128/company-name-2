@@ -239,8 +239,6 @@ h4 {
 
 /* Main Nav */
 .main-nav {
-
-
 	background: #fff;
 }
 
@@ -263,19 +261,19 @@ h4 {
 }
 
 .main-nav li a {
+	color: #000;
 	padding: .5em 1em;
 	line-height: 1.25em;
 	display: block;
 }
 
 .main-nav a:hover {
-	background: #ececec;
+
 	color: #000;
 }
 
 .main-nav a.active {
 	color: #000;
-	background: #ececec;
 }
 
 /* section01 */
