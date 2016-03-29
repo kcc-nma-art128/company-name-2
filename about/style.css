@@ -458,9 +458,28 @@ Description: Define screen-size breakpoints here.
 	}
 
 	.container {
-		width: 80%;
-		margin: 4%;
-		padding: 6%;
+		width: 96%;
+		margin: 2%;
+		padding: 2%;
+	}
+
+	.mainnav a {
+		width:100%;
+		padding: .6em 0 .4em 0;
+		margin: 0;
+	}
+
+	.footer a ul{
+		clear:none;
+		float:left;
+		width:15%;
+	}
+	.footer .logo {
+	display:none;
+	}
+
+	.footer .copyright {
+	margin: 7% 0 0 84%;
 	}
 
 }
@@ -473,9 +492,50 @@ Description: Define screen-size breakpoints here.
 	}
 
 	.container {
-		width: 84%;
-		margin: 3%;
-		padding: 5%;
+		width: 96%;
+		margin: 2%;
+		padding: 2%;
+	}
+
+
+	.mainnav a {
+		width:100%;
+		padding: .6em 0 .4em 0;
+		margin: 0;
+	}
+
+.section2 .row{
+	width:100%;
+}
+
+.section2 h1 {
+	font-size:2.5em;
+}
+
+.section2 h3 {
+	font-size: 1.4em;
+}
+
+.section2 h5 {
+	font-size: 1em;
+}
+
+	.footer .copyright {
+		width: 20%;
+		float: left;
+	margin:0 0 0 70%;
+	}
+
+	.footer a ul{
+		width:21%;
+	}
+
+	.footernav a ul {
+		clear:both;
+		margin:5px;
+	}
+	.footer .logo {
+	display:none;
 	}
 
 }
