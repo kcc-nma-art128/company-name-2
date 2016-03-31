@@ -157,6 +157,9 @@ body{
   width: 58.75em; /* 940px / 16px = 58.75em */
   margin: 0 auto;
 }
+.section04 .container{
+  width: 70%;
+}
 
 h1 {
   font-size: 3.125em; /* 50px */
@@ -488,18 +491,13 @@ blockquote {
 
 }
 
-.col4a{
-  width: 340px;
+.col4{
+  width: 50%;
   float: left;
-  margin: 0 40px 0 140px;
+  /*margin: 0 40px 0 140px;*/
 
 }
-.col4b{
-  width: 340px;
- float: left;
- margin-left : 0;
 
-}
 
 .col-article{
   width: 620px;
@@ -520,13 +518,18 @@ blockquote {
   .container {
     width: 92%;
   }
+  .section04 .container{
+    width: 70%;
+  }
 
   .section02 .col2,
-  .section04.col4a,
-  .section04.col4b{
+  .section04.col4,
+  .section04.col4{
     width: 30%;
-    margin-right: 5%;
   }
+  .col2:last-of-type {
+    margin-right: 0;
+}
 
   .col-article{
    width: 90%;
