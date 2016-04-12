@@ -126,6 +126,7 @@
     background: white;
     text-align: center;
     border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
   }
 
   .mainnav a {
@@ -139,9 +140,13 @@
     color: #000;
   }
 
-  .mainnav a:hover{
+  .mainnav li:hover {
     background: #999;
     color: #000;
+  }
+
+  .mainnav small:hover {
+    color: #fff;
   }
 
   .mainnav a.active {
@@ -261,3 +266,525 @@
     /*#MEDIA QUERIES*/
     /*#@FONT-FACE*/
 /*===================================== */
+/* #RESET
+ ================================================== */
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ /* #HTML5
+ ================================================== */
+ header, section, footer, aside, nav, article, figure {
+ 	display: block;
+ }
+
+ /* #BASE TYPOGRAPHY
+ ================================================== */
+
+ /* #BODY */
+ body {
+ 	font-family: Helvetica, Arial, sans-serif;
+ 	font-size: 100%; /* 1em = 16px */
+ 	line-height: 1.5em; /* 16px x 1.5em = 24px */
+ 	color: #333;
+ }
+
+
+ /* #HEADINGS
+ Based on a Traditional Typographic Scale:
+ 48, 36, 24, 21, 18, 16
+ ================================================== */
+
+ h1, h2, h3, h4, h5, h6 {
+ 	margin-bottom: .5em;
+ }
+
+ h1 {
+ 	font-size: 3.125em; /* 48px / 16px = 3em */
+   font-weight: bold;
+ 	line-height: 1em;
+ }
+
+ h2 {
+ 	font-size: 2.25em; /* 36px / 16px = 2.25em */
+ 	line-height: 1.1em;
+ }
+
+ h3 {
+ 	font-size: 1.5em; /* 24px / 16px = 1.5em */
+ 	line-height: 1.2em;
+ }
+
+ h4 {
+ 	font-size: 1.3125em; /* 21px / 16px = 1.3125em */
+ 	line-height: 1.3em;
+ }
+
+ h5 {
+ 	font-size: 1.125em; /* 18px / 16px = 1.125em */
+ 	line-height: 1.4em;
+ }
+
+ h6 {
+ 	font-size: 1em; /* 16px / 16px = 1em */
+ 	line-height: 1.5em;
+ }
+
+ /* #Paragraphs
+ ================================================== */
+ p {
+ 	margin-bottom: .5em;
+ }
+
+
+ /* #Links
+ ================================================== */
+ a { color: #39c; text-decoration: none; }
+ a:visited, a:hover, a:focus { color: #069; }
+
+
+ /* #Lists
+ ================================================== */
+ ul, ol {
+ 	margin-bottom: .5em;
+ }
+
+ ul li ul, ul li ol, ol li ul, ol li ol {
+ 	margin: 0;
+ }
+
+ li {
+ 	margin-left: 1.875em;
+ }
+
+
+ /* #Images
+ ================================================== */
+ img.scale-with-grid {
+ 	max-width: 100%;
+ 	height: auto;
+ }
+
+ a img {
+ 	border: none;
+ }
+
+
+ /* #CLEARFIX
+ ================================================== */
+ .group:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+
+ /*
+ =====================================
+ =========== END BASE CSS ============
+ =====================================
+ */
+
+
+ /*
+ =====================================
+ ===== BEGIN SITE- SPECIFIC CSS ======
+ =====================================
+ */
+
+ /* SITE-SPECIFIC CSS (Site-Specific Design)
+ Description: "Site-specific" css is where all
+ site-specific visual design styles. Site-specific
+ css should be placed on the bottom to
+ override any base styling above it.
+ =====================================
+ 	#SITE-SPECIFIC BASE STYLING
+ 	#SITE-SPECIFIC TYPOGRAPHY
+ 	#LAYOUT/GRID
+ 	#SECTIONS
+ 	#MEDIA QUERIES
+ 	#@FONT-FACE
+ ===================================== */
+
+ /* SITE-SPECIFIC BASE STYLING
+ Description: Adjust general base settings above with
+ site-specific styles here.
+ (e.g. body background color)
+ ===================================== */
+
+ body {
+ 	background: #fff
+ }
+
+ header {
+   text-align: center;
+   margin-top: 5em;
+   margin-bottom: 3.125em;
+ }
+
+ header .tagline {
+   font-size: 0.75em;
+   font-weight: normal;
+   text-transform: uppercase;
+ }
+
+
+
+ /* SITE-SPECIFIC TYPOGRAPHY
+ Description: Adjust the base typography settings above
+ with site-specific styles here.
+ (e.g. headings, paragraphs, colors, etc.)
+ ===================================== */
+
+ h1 {
+ 	font-size: 3.125em; /* 48px / 16px = 3em */
+   font-weight: bold;
+ 	line-height: .3em;
+ }
+
+
+
+ /* LAYOUT/GRID
+ Description: Place grid and visual layout styling here.
+ (e.g. containers, rows, columns)
+ ===================================== */
+  .container {
+  	/* Fixed width: 960px */
+    width: 58.75em; /* 960px / 16px (base) = 60em - (5em padding x 2) = 50em */
+ 	margin-left: 17.5em;
+  margin-right: 17.5em;
+ 	margin-left: auto;
+  margin-right: auto;
+  	padding: 0;
+  	background: #fff;
+  }
+
+.mainnav {
+   border-top: 3px solid #d5d5d5;
+   border-bottom: 3px solid #d5d5d5;
+   text-align: center;
+
+ }
+
+ .mainnav li {
+   display: inline-block;
+   font-size: 1em;
+   font-weight: bold;
+   text-align: center;
+   text-transform: capitalize;
+   list-style-type: none;
+ 	line-height: 1em;
+ 	width: 7.625em;
+ 	height: 2.75em;
+ 	padding: 0.625em;
+ 	padding-bottom: 0;
+ 	margin: 0.125em;
+ }
+
+ .mainnav li:active {
+   background: #ececec;
+ }
+
+ .mainnav span{
+   font-size: .625em;
+   font-style: bold;
+   color: #999;
+ }
+
+ .hero {
+   margin-top: 1.875em;
+   padding-top: 5.1875em;
+   padding-bottom: 6em;
+   padding-left: 6.875em;
+   padding-right: 6.875em;
+   border-radius: 2em;
+   background: #ececec;
+   text-align: center;
+ }
+
+ .hero h2 {
+   font-size: 5.95em;
+   font-weight: bold;
+ }
+
+ .row {
+   text-align: center;
+   display: inline-block;
+   margin-top: 50px;
+ }
+
+ .col-4 {
+   float: left;
+   width: 18.75em;
+   text-align: left;
+   font-size: 1em;
+   margin-right: 1.25em;
+   padding-right: 0;
+ }
+
+ /*width should be 18.75 em..why won't it fit within the row?*/
+
+ .col-4:last-of-type {
+   margin-right: 0;
+ }
+
+
+ .col-4 h3 {
+   font-size: 2.25em;
+   font-weight: bold;
+   line-height: .3125em;
+ }
+
+ .byline {
+   font-size: .625em;
+   font-weight: bold;
+   text-align: left;
+   color: #666;
+   margin-bottom: 1em;
+ }
+
+ .col-4 img {
+   margin-bottom: .5em;
+ }
+
+ .col-4 span {
+   color: #3399cc;
+ }
+
+  .section3 {
+  	text-align: center;;
+  }
+
+  .section3 h2 {
+  	font-size: 1.5em;
+  	font-weight: bold;
+  }
+
+.section p {
+ 	font-size: 1.3125em;
+ 	line-height: 1.5em;
+ 	border-bottom: 1px solid #ddd;
+ 	padding-top: 2.625em;
+  	padding-bottom: 2.6875em;
+  }
+  col-6 {
+   	float: left;
+   	width: 40%;
+   	margin-left: auto;
+   	margin-right: auto;
+   	margin-top: 4.375em;
+   	margin-bottom: 4.375em;
+   }
+
+   .col-6 ul li {
+   	list-style: none;
+   	margin: 1em;
+   }
+
+   .col-6 i {
+   	float: left;
+   }
+
+   .col-6 h6 {
+   	font-size: 1.125em;
+   	text-align: left;
+   	text-transform: capitalize;
+   	margin-left: 4em;
+   }
+
+   .col-6 p {
+   	text-align: left;
+   	margin-left: 4.5em;
+   	width: 15.0625em;
+   }
+
+   .footer {
+   delete	background: #ddd;
+   	height: 15em;
+
+    /* MEDIA QUERIES
+     Description: Define screen-size breakpoints here.
+     (e.g. Desktop, Tablet, Mobile)
+    ===================================== */
+
+    /* Tablet (Between 768px - 992px)*/
+    @media all and (min-width: 48em) and (max-width: 62em) {
+
+    	body {
+    		font-size: 93.75%; /* 15px */
+    	}
+
+    	.container {
+    		width: 80%;
+    		margin: 4%;
+    		padding: 6%;
+    	}
+
+    }
+
+    /* MOBILE (Smaller than 768px)*/
+    @media all and (max-width: 47.9999em) {
+
+    	body {
+    		font-size: 87.5%; /* 14px */
+    	}
+
+    	.container {
+    		width: 84%;
+    		margin: 3%;
+    		padding: 5%;
+    	}
+
+    }
+
+    /*ABOUT PAGE*/
+
+    .hero2 {
+    	margin-top: 1.875em;
+    	margin-bottom: 1.875em;
+    }
+
+    .hero2 img {
+    	width: 100%;
+    }
+
+    .about {
+    	width: 48.75em;
+    	margin: 0 auto;
+    }
+
+    .about h1 {
+    	font-size: 3em;
+    	font-weight: bold;
+    	line-height: 1em;
+    	text-align: center;
+    	padding: 0;
+    }
+
+    .about .col-1 {
+    	width: 38.75em;
+    	margin: 0 auto;
+    	padding-bottom: 24em;
+    }
+
+    .about .col-1 .date {
+    	font-size: 0.625em;
+    	color: #666;
+    	text-align: center;
+    	margin: 0 auto;
+    }
+
+    .about .paragraph1 {
+    	font-size: 1.5em;
+    	text-align: center;
+    	line-height: 1.5em;
+    }
+
+
+    .about .paragraph2 {
+    	font-size: 1.325em;
+    	text-align: left;
+    	line-height: 1.3em;
+    }
+
+    .about .paragraph2 span {
+    	font-size: 1.1em;
+    	font-weight: bold;
+    	text-transform: uppercase;
+    	color: #000;
+    }
+
+    .about .paragraph3 {
+    	font-size: 1em;
+    	text-align: left;
+    	text-indent: 2em;
+    }
+
+
+    .quote {
+    	border-top: 3px solid #aaa;
+    	border-bottom: 3px solid #aaa;
+    	background-color: #eee;
+    	padding-top: 2em;
+    	padding-bottom: 3em;
+    	padding-left: 3em;
+    	padding-right: 2em;
+    	margin-top: 2em;
+    	margin-bottom: 2em;
+    }
+    .about .paragraph4 {
+    	font-size: 1em;
+    	text-align: left;
+    	text-indent: 2em;
+    }
+
+    .about .col-1 .paragraph4 h4 {
+    	text-transform: uppercase;
+    	color: #000;
+    	font-size: 1.3125em;
+    	font-weight: bold;
+    }
+
+
+    .about .col-1 .paragraph5 {
+    	text-indent: 2em;
+    }
+
+    .about h5 {
+    	line-height: 1em;
+    }
+
+
+    /* MEDIA QUERIES
+    Description: Define screen-size breakpoints here.
+    (e.g. Desktop, Tablet, Mobile)
+    ===================================== */
+
+    /* Tablet (Between 768px - 992px)*/
+    @media all and (min-width: 48em) and (max-width: 62em) {
+
+    	body {
+    		font-size: 93.75%; /* 15px */
+    	}
+
+    	.container {
+    		width: 80%;
+    		margin: 4%;
+    		padding: 6%;
+    	}
+
+    	.row .col-4 {
+    		display: block;
+    		margin: 4%;
+    	}
+
+    	.subheadings .col-6 {
+    		display: block;
+    	}
+
+    }
+
+    /* MOBILE (Smaller than 768px)*/
+    @media all and (max-width: 47.9999em) {
+
+    	body {
+    		font-size: 87.5%; /* 14px */
+    	}
+
+    	.container {
+    		width: 84%;
+    		margin: 3%;
+    		padding: 5%;
+    	}
+
+    }
+
+    /* @FONT-FACE (Webfonts)
+    ===================================== */
+
+
+    /*
+    =====================================
+    ====== END SITE- SPECIFIC CSS =======
+    =====================================
+    */
